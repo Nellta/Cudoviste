@@ -54,6 +54,11 @@ class Kattio extends PrintWriter {
         return Integer.parseInt(nextToken());
     }
 
+    public char getChar(){
+      if(r.ready())return r.read();
+      else return null;
+    }
+
     public double getDouble() {
         return Double.parseDouble(nextToken());
     }
